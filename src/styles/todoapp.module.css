@@ -1,0 +1,144 @@
+
+.userInput {
+    width: 100%;
+    height: 14rem;
+    border-bottom: 10px solid #ccc;
+    background: #977ef3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    padding: 2rem 5rem;
+}
+
+.form_items {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h1{
+    font-size: 3.5rem;
+    text-transform: uppercase;
+}
+
+.input_section {
+    width: 20rem;
+}
+
+.add_btn_section {
+    width: 6rem;
+    margin: 1rem;
+}
+
+.info_wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.input {
+    width: 100%;
+    height: 45px;
+    padding: 12px;
+    border-radius: 12px;
+    border: 1.5px solid lightgrey;
+    outline: none;
+    transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+    box-shadow: 0px 0px 20px -18px;
+  }
+  
+  .input:hover {
+    border: 2px solid lightgrey;
+    box-shadow: 0px 0px 20px -17px;
+  }
+  
+  .input:active {
+    transform: scale(0.95);
+  }
+  
+  .input:focus {
+    border: 2px solid grey;
+  }
+
+  button {
+    /* Variables */
+    --button_radius: 0.75em;
+    --button_color: #e8e8e8;
+    --button_outline_color: #000000;
+    font-size: 15px;
+    font-weight: bold;
+    border: none;
+    border-radius: var(--button_radius);
+    background: var(--button_outline_color);
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  .button_top {
+    display: block;
+    box-sizing: border-box;
+    border: 2px solid var(--button_outline_color);
+    border-radius: var(--button_radius);
+    padding: 0.60em 1em;
+    background: var(--button_color);
+    color: var(--button_outline_color);
+    transform: translateY(-0.2em);
+    transition: transform 0.1s ease;
+  }
+  
+  button:hover .button_top {
+    /* Pull the button upwards when hovered */
+    transform: translateY(-0.33em);
+  }
+  
+  button:active .button_top {
+    /* Push the button downwards when pressed */
+    transform: translateY(0);
+  }
+
+  .task_list {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .all_task {
+    width: 100%;
+    padding: 1rem 5rem;
+    letter-spacing: 5px;
+    font-size: 1.2rem;
+  }
+
+  @media screen and (max-width: 850px) {
+    .input_section {
+      width: 100%;
+    }
+
+    .form_items {
+      flex-direction: column;
+      row-gap: 2px;
+    }
+
+    .userInput {
+      padding: 1rem 1rem;
+    }
+  }
+
+  .no_task_container {
+    display: flex;
+    align-items:center ;
+    justify-content: center;
+    height: calc( 100vh - 25rem);
+    width: 100%;
+  }
+
+  .no_task_container > h2 {
+    font-family: monospace;
+    font-size: 2.6rem;
+    letter-spacing: 5px;
+    color: #ccc;
+  }

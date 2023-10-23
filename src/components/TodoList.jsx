@@ -1,4 +1,5 @@
 import styles from '../styles/todolist.module.css'
+import PropTypes from 'prop-types'
 import { useState } from 'react'
 
 const TodoList = ( { id, content, onDelete, onUpdate } ) => {
@@ -49,6 +50,13 @@ const TodoList = ( { id, content, onDelete, onUpdate } ) => {
       </ul>
     </div>
   )
+}
+
+TodoList.propTypes = {
+  id: PropTypes.number,
+  content: PropTypes.string,
+  onDelete: PropTypes.func,
+  onUpdate: PropTypes.func
 }
 
 export default TodoList

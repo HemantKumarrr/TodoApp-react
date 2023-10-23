@@ -124,7 +124,14 @@ h1{
     }
 
     .userInput {
-      padding: 1rem 1rem;
+      padding: 5rem 1rem;
+      text-shadow: 4px 4px 4px rgba(255, 255, 255, 0.3);
+    }
+
+    .all_task {
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
   }
 

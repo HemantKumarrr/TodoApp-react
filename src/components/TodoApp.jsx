@@ -79,7 +79,7 @@ const TodoApp = () => {
           })
           :
           <div className={styles.no_task_container}>
-            <h2>No Task's</h2>
+            <h2>No Tasks</h2>
           </div>
         }
       </div>
